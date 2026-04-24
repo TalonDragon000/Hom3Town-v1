@@ -7,8 +7,8 @@
     --text-color: #333; 
     --background-color: #f4f4f4; /* Light background */
     --font-family: 'Arial', sans-serif;
-    --cozy-cottage: url("/src/assets/cozy-cottage.jpg");
-    --starter-sprite: url("/src/assets/Starter Avatar Set.png");
+    --cozy-cottage: url("./assets/cozy-cottage.jpg");
+    --starter-sprite: url("./assets/starter-avatar-set.png");
 }
 
 .navbar-white {

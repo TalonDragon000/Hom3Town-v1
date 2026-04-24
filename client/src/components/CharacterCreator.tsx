@@ -3,7 +3,7 @@ import type { AvatarCategory, SelectedFrames, Gender } from '@/types/avatar';
 import { FRAME_TAGS, determineGender, isFrameAllowedForGender } from '@/data/frameTags';
 import { calculateBackgroundPosition, isBlankFrame } from '@/utils/spriteCalculations';
 import Toast from './Toast';
-import spriteSheet from '@/assets/Starter Avatar Set.png';
+import spriteSheet from '@/assets/starter-avatar-set.png';
 
 const LAYER_ORDER: AvatarCategory[] = [
   'body', 'eyes', 'brows', 'mouth', 'underwear',

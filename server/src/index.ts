@@ -1,8 +1,11 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+import path from 'path';
+
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
+
 import express from 'express';
 import http from 'http';
 import cors from 'cors';
-import path from 'path';
 import { Server } from 'socket.io';
 import avatarRoutes from './routes/avatars';
 
