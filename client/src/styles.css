@@ -7,8 +7,8 @@
     --text-color: #333; 
     --background-color: #f4f4f4; /* Light background */
     --font-family: 'Arial', sans-serif;
-    --cozy-cottage: url("https://github.com/TalonDragon000/Hom3Town/blob/main/client/assets/cozy-cottage.jpg?raw=true");
-    --starter-sprite: url("https://github.com/TalonDragon000/Hom3Town/blob/main/client/assets/Starter%20Avatar%20Set.png?raw=true");
+    --cozy-cottage: url("/src/assets/cozy-cottage.jpg");
+    --starter-sprite: url("/src/assets/Starter Avatar Set.png");
 }
 
 .navbar-white {
@@ -397,4 +397,44 @@ footer {
 
 .action-btn:hover {
     background: var(--secondary-color);
+}
+
+/* Asset button selected state */
+.asset-btn.selected {
+    border-color: var(--third-color);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+}
+
+/* Toast notifications */
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast-success {
+    background: var(--primary-color);
+    color: #1a1a1a;
+}
+
+.toast-error {
+    background: #e74c3c;
+}
+
+.toast-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast-hidden {
+    opacity: 0;
+    transform: translateY(10px);
 }

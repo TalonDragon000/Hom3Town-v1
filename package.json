@@ -1,0 +1,13 @@
+{
+  "name": "hom3town",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "start": "npm run start --prefix server",
+    "install:all": "npm install --prefix client && npm install --prefix server"
+  },
+  "description": "Hom3Town - Web3 gaming platform monorepo"
+}
